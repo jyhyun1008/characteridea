@@ -71,7 +71,6 @@ if (accessToken) {
                         'Authorization': `Bearer `+accessToken,
                     },
                     body: JSON.stringify({
-                        i: i,
                         visibility: 'home',
                         text: autoNoteText
                     }),
@@ -90,7 +89,6 @@ if (accessToken) {
             }
         })
         .catch((error) => {
-        
             setTimeout(() => {
                 location.href = 'https://hiyuno.peacht.art/characteridea/'
             }, 20000);
