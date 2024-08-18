@@ -78,6 +78,7 @@ if (accessToken) {
                 }
                 fetch(autoNoteUrl, autoNoteParam)
                 .then((data) => {
+                    localStorage.setItem('lastNote', true)
                     lastNoteDate = nownow
                     localStorage.setItem('lastNoteDate', nownow)
                     lastNoteText = autoNoteText
