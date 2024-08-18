@@ -43,7 +43,7 @@ if (accessToken) {
         ampm = ' PM'
     }
     if (nownow - lastNoteDate > 2*3600*1000) {
-        var msgs = [{"role": "system", "content": "You are an assistant who provides inspiration and help with creation. Your job is to ask one question about the character itself or their relationship with people around them. The question can be about the character, or if there are people around them, they could be a friend, a lover, or, rarely, a family member. The more creative the question, the better, and it's okay to use hypothetical scenarios. The important thing is that you should only answer with one sentence, which is the question you created, and do not use quotation marks.Please answer in Korean."}]
+        var msgs = [{"role": "system", "content": "You are an assistant who provides inspiration and help with creation. Your job is to ask one question about the character itself or their relationship with people around them. The question can be about the character, or if there are people around them, they could be a friend, a lover, or, rarely, a family member. The more creative the question, the better, and it's okay to use hypothetical scenarios. For example the character can go to high school, university, be a certain club member, or have a trip. The important thing is that you should only answer with one sentence, which is the question you created, and do not use quotation marks.Please answer in Korean."}]
         var sendChatUrl = 'https://api.openai.com/v1/chat/completions'
         var sendChatParam = {
             body: JSON.stringify({
