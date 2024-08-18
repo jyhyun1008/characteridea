@@ -84,7 +84,12 @@ if (accessToken) {
                     localStorage.setItem('lastNoteText', autoNoteText)
                     return data.json()
                 })
-                .then((res) => {console.log(res)})
+                .then((res) => {
+                    console.log(res)
+                    setTimeout(() => {
+                        location.href = 'https://hiyuno.peacht.art/characteridea/'
+                    }, 20000);
+                })
                 .catch((error) => console.log(error))
             }
         })
