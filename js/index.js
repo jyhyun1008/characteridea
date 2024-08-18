@@ -95,5 +95,9 @@ if (accessToken) {
                 location.href = 'https://hiyuno.peacht.art/characteridea/'
             }, 20000);
         });
-    })
+    } else {
+        setTimeout(() => {
+            location.href = 'https://hiyuno.peacht.art/characteridea/'
+        }, 20000);
+    }
 }
